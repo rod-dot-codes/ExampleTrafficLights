@@ -30,8 +30,8 @@ def change_state(current_states):
     state.change()
 
 def foo(current_states, current_time):
-    print(current_time)
     current_time += 1
+    print(current_time)
     print(time.ctime())
     # First, we change every 10 seconds from Red
     if current_states[0].state in ["green", "red"] and current_time == 10:
